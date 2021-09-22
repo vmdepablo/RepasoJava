@@ -15,7 +15,7 @@ public class EJ22 {
         char carac;
         int j = 0;
         for(int i = 0;i < cadena.length();i++) {
-            carac = cadena.charAt(i);
+            carac = cadena.charAt(i)
             switch (carac) {
                 case 'A':
                     numVoc++;
