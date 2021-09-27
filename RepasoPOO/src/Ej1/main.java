@@ -42,12 +42,13 @@ public class main {
             if (minPrecio < cocheFinal.getPrecio()) {
                 minPrecio = cocheFinal.getPrecio();
                 indice = liCoches.nextIndex();
+                while (liCoches.previousIndex() == indice) {
+                    liCoches.previous();
+                }
             }
             liCoches.next();
         }
-        while(liCoches.previousIndex() == indice){
-            liCoches.previous();
-        }
+
         JOptionPane.showMessageDialog(null, cocheFinal.toString());
 
     } //Fin del main
