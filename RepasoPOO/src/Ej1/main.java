@@ -35,18 +35,15 @@ public class main {
         }
         ListIterator<Vehiculo> liCoches = listaCoches.listIterator();
         double minPrecio = 0;
-        Vehiculo cocheFinal = liCoches.next();
-        minPrecio = cocheFinal.getPrecio();
+        Vehiculo cocheFinal = null;
+        minPrecio = listaCoches.get(0).getPrecio();
         int indice = 0;
         while (liCoches.hasNext()) {
-            if (minPrecio < cocheFinal.getPrecio()) {
+            cocheFinal = liCoches.next();
+            if (cocheFinal.getPrecio() < minPrecio){
                 minPrecio = cocheFinal.getPrecio();
                 indice = liCoches.nextIndex();
-                while (liCoches.previousIndex() == indice) {
-                    liCoches.previous();
-                }
             }
-            liCoches.next();
         }
 
         JOptionPane.showMessageDialog(null, cocheFinal.toString());
