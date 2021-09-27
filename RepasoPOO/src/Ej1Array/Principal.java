@@ -1,4 +1,4 @@
-package POO;
+package Ej1Array;
 
 import java.util.Scanner;
 
