@@ -23,7 +23,9 @@ public class Main {
             int edad = sc.nextInt();
             arrayPersonas[i] = new Persona(nombre,apellido1, apellido2, edad);
         }
-        System.out.println(Arrays.toString(arrayPersonas));
+        for(int i = 0; i <= 3;i++){
+            System.out.println(arrayPersonas[i]);
+        }
     } //Fin del main
 
 }   //Fin de la clase Main
