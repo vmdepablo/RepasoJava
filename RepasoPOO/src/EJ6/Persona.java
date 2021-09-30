@@ -7,7 +7,7 @@ package EJ6;
  */
 public class Persona {
 
-    String nombre;
+    protected String nombre;
     private int id;
     public Persona(){
         
